@@ -2,9 +2,11 @@
 .classpath
 .project
 .settings/
+bin/
  
 # Maven: Archivos compilados
 target/
+
 
 # Package Files
 *.jar
