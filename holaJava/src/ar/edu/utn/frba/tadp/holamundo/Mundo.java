@@ -1,6 +1,8 @@
 package ar.edu.utn.frba.tadp.holamundo;
 
-public class Mundo {
+import ar.edu.utn.frba.tadp.entes.Nombrable;
+
+public class Mundo implements Nombrable{
 	
 	public String getNombre() {
 		return "Mundo";
