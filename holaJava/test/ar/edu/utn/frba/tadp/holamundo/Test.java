@@ -5,19 +5,23 @@ import java.util.Collection;
 
 import ar.edu.utn.frba.tadp.entes.Nombrable;
 import ar.edu.utn.frba.tadp.entes.Persona;
+import ar.edu.utn.frba.tadp.entes.Direccion;
 
 
 public class Test {
 	
 	public static void main(String[] args) {
 		
+		Persona persona = new Persona("Leo", new Direccion("Esteban de luca", 1322));
+		System.out.println("La persona " + persona + " vive en " + persona.getDireccion());
 		
-		Collection<Nombrable> nombrables = getNombrables();
+		
+		/*Collection<Nombrable> nombrables = getNombrables();
 		Recepcionista recepcionista = makeRecepcionista();
 		for(Nombrable nombrable : nombrables)
 		{
 			recepcionista.saludar(nombrable);
-		}
+		}*/
 		
 		
 		/*Recepcionista recepcionista = makeRecepcionista();
@@ -38,8 +42,11 @@ public class Test {
 	
 	private static Collection<Nombrable> getNombrables() {
 		Collection<Nombrable> nombrables = new ArrayList<Nombrable>();
+		nombrables.add(new Mundo());
+		nombrables.add(new Persona("Jose"));
+		nombrables.add(new Persona("Juan"));
 		
-		return null;
+		return nombrables;
 	}
 
 	private static Recepcionista makeRecepcionista() {
