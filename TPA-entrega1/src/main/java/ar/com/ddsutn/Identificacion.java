@@ -5,9 +5,16 @@ import java.time.LocalDate;
 public class Identificacion {
 	
 	private String nombre;
-	private int edad;
+	private Integer edad;
 	private String sexo;
 	private LocalDate fechaDeNacimiento;
+	
+	
+	public boolean esValido(Usuario usuario)
+	{
+		if (this.nombre.length() <= 4) return false;
+		return true;
+	}
 	
 	
 	public Identificacion(String nombre, int edad, String sexo,
@@ -42,6 +49,8 @@ public class Identificacion {
 	public void setFechaDeNacimiento(LocalDate fechaDeNacimiento) {
 		this.fechaDeNacimiento = fechaDeNacimiento;
 	}
+	
+	
 	
 	
 

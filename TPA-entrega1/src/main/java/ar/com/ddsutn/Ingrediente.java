@@ -8,6 +8,12 @@ public class Ingrediente {
 	private int calorias;
 	private Collection<CondicionPreexistente> esInadecuadoPara;
 	
+	public Ingrediente(String nombre, int calorias,
+			Collection<CondicionPreexistente> esInadecuadoPara) {
+		this.nombre = nombre;
+		this.calorias = calorias;
+		this.esInadecuadoPara = esInadecuadoPara;
+	}
 	public String getNombre() {
 		return nombre;
 	}

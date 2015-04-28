@@ -11,7 +11,7 @@ public class Vegano implements CondicionPreexistente{
 		
 		Collection<Ingrediente> legustan = preferencia.getLeGustan();
 
-		return legustan.stream().anyMatch(ingrediente -> ingrediente.getNombre().equals("chori")
+		return legustan.stream().noneMatch(ingrediente -> ingrediente.getNombre().equals("chori")
 															|| ingrediente.getNombre().equals("chivito")
 															|| ingrediente.getNombre().equals("pollo")
 															|| ingrediente.getNombre().equals("carne"));

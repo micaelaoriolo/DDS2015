@@ -2,10 +2,10 @@ package ar.com.ddsutn;
 
 public class Complexion {
 	
-	private int altura;
-	private int peso;
+	private Integer altura;
+	private Integer peso;
 	
-	public Complexion(int altura, int peso) {
+	public Complexion(Integer altura, Integer peso) {
 		//super();
 		this.altura = altura;
 		this.peso = peso;
@@ -21,6 +21,12 @@ public class Complexion {
 	}
 	public void setPeso(int peso) {
 		this.peso = peso;
+	}
+	
+	public boolean esValido(Usuario usuario)
+	{
+		if (this.altura != null && this.peso != null) return true;
+		return false;			
 	}
 	
 	
