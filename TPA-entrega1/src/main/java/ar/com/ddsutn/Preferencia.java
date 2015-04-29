@@ -11,7 +11,6 @@ public class Preferencia {
 	
 	public Preferencia(Collection<Ingrediente> leGustan,
 			Collection<Ingrediente> noLeGustan) {
-		//super();
 		this.leGustan = leGustan;
 		this.noLeGustan = noLeGustan;
 	}
@@ -20,20 +19,8 @@ public class Preferencia {
 		return leGustan;
 	}
 
-	public void setLeGustan(Collection<Ingrediente> leGustan) {
-		this.leGustan = leGustan;
-	}
-
-	public Collection<Ingrediente> getNoLeGustan() {
-		return noLeGustan;
-	}
-
-	public void setNoLeGustan(Collection<Ingrediente> noLeGustan) {
-		this.noLeGustan = noLeGustan;
-	}
-
 	public Boolean puedeComer(Ingrediente ingrediente) {
-		return null;
+		return leGustan.stream().anyMatch(ing -> ing.getNombre().equals(ingrediente.getNombre()));
 	}
 	
 	

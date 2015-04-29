@@ -12,14 +12,17 @@ public class Identificacion {
 	
 	public boolean esValido(Usuario usuario)
 	{
+		if (this.nombre == null) return false;
+
 		if (this.nombre.length() <= 4) return false;
+		
+		
 		return true;
 	}
 	
 	
 	public Identificacion(String nombre, int edad, String sexo,
 			LocalDate fechaDeNacimiento) {
-		//super();
 		this.nombre = nombre;
 		this.edad = edad;
 		this.sexo = sexo;

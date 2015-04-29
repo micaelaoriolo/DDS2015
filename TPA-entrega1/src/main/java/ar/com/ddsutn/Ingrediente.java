@@ -14,6 +14,7 @@ public class Ingrediente {
 		this.calorias = calorias;
 		this.esInadecuadoPara = esInadecuadoPara;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}

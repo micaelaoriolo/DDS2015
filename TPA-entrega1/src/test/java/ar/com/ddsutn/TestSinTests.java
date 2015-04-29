@@ -35,11 +35,14 @@ public class TestSinTests {
 		condiciones.add(dia);
 		
 		
+		Rutina rutina = new Rutina("Activa", 38);
 		
 		
 		
 		
-		Usuario usuario = new Usuario(identificacion, complexion, preferencia, condiciones);
+		
+		
+		Usuario usuario = new Usuario(identificacion, complexion, preferencia, condiciones, rutina);
 		
 		System.out.println(usuario.esValido());
 	
